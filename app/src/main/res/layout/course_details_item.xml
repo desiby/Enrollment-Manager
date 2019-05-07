@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_course_id"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="27dp"
+            android:text="@string/title_course_label"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/course_title_textview"
+            android:layout_width="121dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="62dp"
+            android:layout_marginTop="49dp" />
+
+        <TextView
+            android:id="@+id/term_title_textview"
+            android:layout_width="106dp"
+            android:layout_height="29dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="49dp"
+            android:layout_marginEnd="4dp" />
+
+        <TextView
+            android:id="@+id/course_start_textview"
+            android:layout_width="151dp"
+            android:layout_height="31dp"
+            android:layout_below="@+id/course_title_textview"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="16dp"
+            android:layout_toEndOf="@+id/textView7" />
+
+        <TextView
+            android:id="@+id/course_end_textview"
+            android:layout_width="154dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/course_start_textview"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/textView8" />
+
+        <TextView
+            android:id="@+id/course_status_textview"
+            android:layout_width="160dp"
+            android:layout_height="32dp"
+            android:layout_below="@+id/mentor_phone_textview"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@+id/textView9" />
+
+        <TextView
+            android:id="@+id/optional_notes"
+            android:layout_width="160dp"
+            android:layout_height="77dp"
+            android:layout_below="@+id/course_status_textview"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/textView10" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="46dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="54dp"
+            android:layout_marginEnd="22dp"
+            android:layout_toStartOf="@+id/term_title_textview"
+            android:text="@string/term_label"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="74dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView5"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/course_start_date"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView7"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/course_end_date"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mentor_name_textview"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="26dp"
+            android:text="@string/course_status"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="63dp"
+            android:layout_height="33dp"
+            android:layout_below="@+id/textView9"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/optional_notes"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/icon_edit_course"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mentor_email_textview"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="18dp"
+            android:contentDescription="@string/edit_course"
+            app:srcCompat="@drawable/ic_edit" />
+
+        <ImageButton
+            android:id="@+id/icon_delete_course"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/icon_edit_course"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="18dp"
+            android:contentDescription="@string/delete_course"
+            app:srcCompat="@drawable/ic_delete" />
+
+        <TextView
+            android:id="@+id/textView_course_id"
+            android:layout_width="69dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="9dp"
+            android:text="@string/course_id"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/mentor_name_textview"
+            android:layout_width="102dp"
+            android:layout_height="32dp"
+            android:layout_below="@+id/textView15"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/mentor_name" />
+
+        <TextView
+            android:id="@+id/mentor_phone_textview"
+            android:layout_width="102dp"
+            android:layout_height="32dp"
+            android:layout_alignTop="@+id/mentor_name_textview"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@+id/mentor_name_textview"
+            android:text="@string/mentor_phone" />
+
+        <TextView
+            android:id="@+id/mentor_email_textview"
+            android:layout_width="138dp"
+            android:layout_height="31dp"
+            android:layout_below="@+id/course_end_textview"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="49dp"
+            android:layout_toEndOf="@+id/mentor_phone_textview"
+            android:text="@string/mentor_email" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView8"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="31dp"
+            android:text="@string/mentor"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/btn_share_notes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView10"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="3dp"
+            android:contentDescription="@string/share_notes"
+            app:srcCompat="@drawable/ic_menu_share" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textview_assessment_id"
+            android:layout_width="52dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/ass_id" />
+
+        <TextView
+            android:id="@+id/textview_assessment_name"
+            android:layout_width="201dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="119dp"
+            android:layout_marginTop="13dp"
+            android:text="@string/name_assessment" />
+
+        <TextView
+            android:id="@+id/textview_ass_course_title"
+            android:layout_width="163dp"
+            android:layout_height="32dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="119dp"
+            android:layout_marginTop="57dp"
+            android:text="@string/course_title" />
+
+        <TextView
+            android:id="@+id/aLabel"
+            android:layout_width="99dp"
+            android:layout_height="31dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="14dp"
+            android:text="@string/name" />
+
+        <TextView
+            android:id="@+id/aLabel2"
+            android:layout_width="99dp"
+            android:layout_height="31dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="60dp"
+            android:text="@string/course_title" />
+
+        <TextView
+            android:id="@+id/aLabel3"
+            android:layout_width="99dp"
+            android:layout_height="31dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="110dp"
+            android:text="@string/due_date" />
+
+        <TextView
+            android:id="@+id/textview_due_date"
+            android:layout_width="165dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="117dp"
+            android:layout_marginTop="108dp"
+            android:text="@string/assessment_due_date" />
+
+        <ImageButton
+            android:id="@+id/icon_edit_assessment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textview_ass_course_title"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="-2dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/edit_assessment"
+            app:srcCompat="@drawable/ic_edit" />
+
+        <ImageButton
+            android:id="@+id/icon_delete_assessment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/delete_assement"
+            app:srcCompat="@drawable/ic_delete" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

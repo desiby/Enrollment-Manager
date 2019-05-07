@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarStyle="outsideOverlay">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editTxt_course_title"
+                android:layout_width="232dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="16dp"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/insert_course_title"
+                android:inputType="textPersonName"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/spinner_term_choice"
+                android:layout_width="232dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="40dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTxt_course_title" />
+
+            <EditText
+                android:id="@+id/editText_course_start_date"
+                android:layout_width="236dp"
+                android:layout_height="61dp"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="52dp"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/start_date"
+                android:inputType="date"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinner_term_choice" />
+
+            <EditText
+                android:id="@+id/editText_course_end_date"
+                android:layout_width="231dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="44dp"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/end_date"
+                android:inputType="date"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText_course_start_date" />
+
+            <Spinner
+                android:id="@+id/spinner_status_choice"
+                android:layout_width="233dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="60dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText_course_end_date" />
+
+            <EditText
+                android:id="@+id/editText_mentor_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="50dp"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/mentor_name_edit"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editText_mentor_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="50dp"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/mentor_phone_edit"
+                android:inputType="phone" />
+
+            <EditText
+                android:id="@+id/editText_mentor_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="50dp"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/mentor_email_edit"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/editText_optional_note"
+                android:layout_width="236dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="52dp"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/notes"
+                android:inputType="textMultiLine"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinner_status_choice" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>
